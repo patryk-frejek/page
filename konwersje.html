@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+nav ul li {
+    display: inline-block;
+    float: left ;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+p{
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://freju94.github.io/notatki/index.html">GŁÓWNA</a></li>
+            <li><a href="https://freju94.github.io/notatki/tablice.html">TABLICE</a></li>
+            <li><a href="https://freju94.github.io/notatki/konwersje.html">KONWERSJE TYPÓW</a></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+    <br>
+    <p>
+KONWERSJE JAWNE ORAZ NIE JAWNE=  jawne gdy sami decydujemy o konwersji w sposób bezpośredni. <br>
+<br><br>
+============W warunkowych porównanie liczby i stringa - liczba konwertuje się na string.<br>
+<br>
+============String na boolean == string który nie jest pusty jest prawdą<br>
+<br>
+============!!x - podwójna negacja <br>
+dla falszów  robi fałsz<br>
+dla true podwójna negacja  to true. Pojedyncz false<br>
+<br>
+============Konwersje Boolean(); JAWNE<br>
+Boolean("true"); - w przypaadku jakichkolwiek stringów robi true<br>
+Boolean(""); - pusty string, null,undefined oraz 0  daje false.<br>
+<br>
+============Konwersja tablicy na string<br>
+const arr = [1,2,3,4].join(""); // wynik "1,2,3,4" lub<br>
+arr.toString(); // 1,2,3,4,<br>
+<br>
+============ Konwersja liczb - Math.floor(x);<br>
+zwraca największą liczbę całkowitą równą lub mniejszą podanej liczbie<br>
+Math.floor(4.8);//4<br>
+Math.floor(-4.8);// 5<br>
+<br>
+============ Konwersja liczb - Math.ceil(x);<br>
+zwraca największą liczbę całkowitą równą lub większą podanej liczbie<br>
+<br>
+Math.ceil(0.1); 1<br>
+Math.ceil(1.1);2<br>
+Math.ceil(-1.1);-1<br>
+<br>
+============ Konwersja liczb - Math.round(x);<br>
+zwraca najbliższą liczbę całkowitą<br>
+Math.round(3.5); //4<br>
+<br>
+============ Konwersja liczb - Math.trunc(x);<br>
+ucina część po przecinku<br>
+Math.trunc(3.5); //<br>
+
+</p>
+</body>
+</html>
