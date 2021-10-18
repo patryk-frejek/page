@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+    TABLICE	<br>
+<br>
+========Tworzenie nowych tablic: <br>
+ var tab = [a,b,c,]; <br>
+lub <br>
+var tab = new Array(a,b,c);<br>
+<br>
+========Długośc tablicy jest regulowana :<br>
+tab.lenght = #;  ucina nadmiarowe elementy tablicy<br>
+<br>
+========Kasowanie elementów tablicy :<br><br>
+<br>
+delete tab[#];   -- usuwa element tablicy nie <br>skracając jej długości.Tworzy pusty element<br>
+<br>
+========Tworzenie wypełnionej tablicy :<br>
+<br>
+Array(X).fill(Y); <br>
+var arr = Array(10).fill(5);<br>
+<br>
+========Łaczenie tablic : concat();<br>
+tab 4 = tab1.concat(tab2,tab3);<br>
+Dodając tablicę w tablicy za pomocą concat();<br> Wewnętrzna tablica pozostaje niezmieniona<br>
+<br>
+===========Przetworzenie tablicy w  STRING array.join() =======<br>
+ <br>
+var data = [1,2,3,4,5,,7];<br>
+var result = data.join("-"); // 1-2-3-4-5--7<br>
+<br>
+========ODWRACANIE TABLICY<br>
+var data = [1,2,3,4,5,6,7];<br>
+var reversed = data.reverse(); // [7,6,5,4,3,2,1] <br>Zmienia oryginał !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<br>
+
+========Dodanie nowego elementu tablicy:<br>
+data.push(12,"data");<br>
+<br>
+========Wycięcie ostatniego elementu tablicy ==== tablica.pop();np.<br>
+ var lastElement = data.pop();<br>
+<br>
+========Wycięcie pierwszego elementu <br>
+array.shift();<br>
+========Dodanie pierwszego elementu unshift();<br>
+array.unshift();<br>
+
+=========INDEX OF i LAST INDEX OF<br>
+var result = tablica.indexOf("Jakaś zmienna",#);<br>// wynikiem jest nr indexu na ktorym znajduje sie poszyukiwana zmienna<br>
+var result = tablica.lastIndexOf("Jakaś zmienna",#);<br>// wynikiem jest ostatni nr indexu na ktorym znajduje sie poszyukiwana zmienna<br>
+# - pozwala ograniczyć poszukiwania od pewnego indexu w prawo lub w lewo<br>
+
+========array.splice(startIndex,deleteCount, item, item );<br>
+</p>
+</body>
+</html>
