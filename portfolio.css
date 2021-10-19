@@ -42,7 +42,9 @@ opacity: 1;
 text-decoration: underline;
 transition: all 0.5s;
 }
-
+#notatki{
+    margin-left: 30px;
+       }
 section#intro{
     height: 50px;
     background-image:url(https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg) ;
