@@ -133,15 +133,41 @@ justify-content: center;
      transform: scale(1.01);
     transition: all 1s;
 
+}
+#link-box{
+    background-color:rgba(128, 128, 128, 0.281);
+}
+ .notes { 
+    border: solid 1px black;
+     display: inline-block;
+    flex-direction:row;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: auto;
+    font-size: 10px;
 
 }
+.notes ul li{
+list-style: None;
+text-decoration: underline;
+
+}
+
+.notes a{
+    color:black ;
+    font-weight: bold;
+  
+}
+
 .image-box a{
     text-align: center;
     text-decoration: none;
     color: white;
 }
 #contact-section{
-    margin-top: 50px;
+    margin-top: 100px;
     background-color:rgba(87, 74, 51, 0.397) ;
     padding: 50px;
     text-align: center;
