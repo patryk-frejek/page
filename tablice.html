@@ -12,11 +12,9 @@
 <link rel="icon" href="https://cdn.pixabay.com/photo/2017/06/05/14/30/elephant-2374224__340.jpg" type="image/jpg">
 <style>
 
-#notatki{
-margin-left: 30px;
-   }
+
 </style>
-    <title>Notatki HTML</title>
+    <title>Notatki JavaScript</title>
     
 </head>
 <body>
@@ -25,19 +23,40 @@ margin-left: 30px;
            <ul>
                <li><a href="#home">Strona Główna</a></li>
                <li><a href="https://freju94.github.io/notatki/portfolio.html">Portfolio</a></li>
-               <li><a href="#about">HTML</a></li>
-               <li><a href="#myskills">CSS</a></li>
-               <li><a href="#project-section">JavaScript</a></li>
-               <li><a href="#contact-section">Kontakt </a></li>
-        
-
-
+               <li><a href="#">HTML</a></li>
+               <li><a href="#">CSS</a></li>
+               <li><a href="">JavaScript</a></li>
+               <li><a href="#">Kontakt </a></li>
            </ul> 
         </nav>
-
+        <div id="link-box">
+        <div class="notes" id="notes-list">
+            <ul>
+                <li id="tablice"><a href="https://freju94.github.io/notatki/tablice.html">Tablice</a></li>
+                <li id="konwersje"><a href="https://freju94.github.io/notatki/konwersje.html">Konwersje jawne i niejawne</a></li>
+                <li id="zmienne"><a href="https://freju94.github.io/notatki/variables.html">Typy zmiennych</a></li>
+            </ul>
+        </div>
+        <div class="notes" id="notes-list2">
+            <ul>
+                <li id="#"><a href="">Rezerwa</a></li>
+                <li id="#"><a href="">Rezerwa</a></li>
+                <li id="#"><a href="#">Rezerwa</a></li>
+            </ul>
+        </div>
+        <div class="notes" id="notes-list3">
+            <ul>
+                <li id="#"><a href="">Rezerwa</a></li>
+                <li id="#"><a href="">Rezerwa</a></li>
+                <li id="#"><a href="#">Rezerwa</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- SEKCJA Z NOTATKAMI -->
         <div id="notatki">
             <br>
-    <p>
+                <p>
+  <p>
     TABLICE	<br>
 <br>
 ========Tworzenie nowych tablic: <br>
@@ -89,80 +108,9 @@ var result = tablica.lastIndexOf("Jakaś zmienna",#);<br>// wynikiem jest ostatn
 <br>
 ========array.splice(startIndex,deleteCount, item, item );<br>
 </p>
+                </p>
         </div>
        
-    
-      <!-- <section id="myskills">
-          <h1 class="section-heading"> Moje umiejętności</h1>
-
-          <div class="skills-container">
-              <div class="skill-information">
-                  <p><i class="fa-brands fa-html5 fa-3x"></i></p>
-                  <p class="skill-name">HTML5</p>
-                  <p class="progress"><progress value="80" max="100"></progress></p>
-              </div>
-              <div class="skill-information">
-                  <p><i class="fa-brands fa-css3 fa-3x"></i></p>
-                  <p class="skill-name">CSS3</p>
-                  <p class="progress"><progress value="50" max="100"></progress></p>
-              </div>
-              <div class="skill-information">
-                  <p><i class="fa-brands fa-js fa-3x"></i></p>
-                  <p class="skill-name">JavaScript</p>
-                  <p class="progress"><progress value="10" max="100"></progress></p>
-              </div>
-               <div class="skill-information">
-                  <p><i class="fa-brands fa-react fa-3x"></i></p>
-                  <p class="skill-name">React</p>
-                  <p class="progress"><progress value="40" max="100"></progress></p>
-              </div>
-              <div class="skill-information">
-                  <p><i class="fa-brands fa-bootstrap fa-3x"></i></p>
-                  <p class="skill-name">Bootstrap</p>
-                  <p class="progress"><progress value="20" max="100"></progress></p>
-              </div>
-              <div class="skill-information">
-                  <p><i class="fa-brands fa-python fa-3x"></i></p>
-                  <p class="skill-name">Python</p>
-                  <p class="progress"><progress value="50" max="100"></progress></p>
-              </div>
-              <div class="skill-information">
-                  <p><i class="fa-brands fa-php fa-3x"></i></p>
-                  <p class="skill-name">PHP</p>
-                  <p class="progress"><progress value="45" max="100"></progress></p>
-              </div> -->
-          </div>
-      </section>
-<!-- 
-      <section id="project-section">
-          <h1 class="section-heading">Moje Projekty</h1>
-          <div class="projects-container">
-              <div class="image-box">
-                  <a href="#"><img src="https://media.istockphoto.com/photos/document-management-system-being-setup-by-it-consultant-working-on-picture-id1291478674?b=1&k=20&m=1291478674&s=170667a&w=0&h=uL2_4Aypci7qRRBW8kCxrQd1hcraDtz7r3yMFElm9Uw=" alt="">
-                  <div>TEKST</div></a>
-              </div>
-              <div class="image-box">
-                  <a href="#"><img src="https://media.istockphoto.com/photos/architect-work-on-digital-tablet-picture-id1277686250?b=1&k=20&m=1277686250&s=170667a&w=0&h=F9ME1fPwhpbyN1SfpdBePajT2kowa8GznYjf0D7cswg=" alt="">
-                  <div>TEKST</div></a>
-              </div>
-              <div class="image-box">
-                  <a href="#"><img src="https://cdn.pixabay.com/photo/2020/03/26/08/53/machinery-4969620__340.jpg" alt="">
-                  <div>TEKST</div>
-                  </a>
-              </div>
-              <div class="image-box">
-                  <a href="#"><img src="https://cdn.pixabay.com/photo/2020/03/26/08/41/pen-4969580__340.jpg" alt="">
-                  <div>TEKST</div>
-                  </a>
-              </div>
-              <div class="image-box">
-                  <a href="#"><img src="https://cdn.pixabay.com/photo/2020/11/29/04/02/hand-5786371__340.jpg" alt="">
-                  <div>TEKST</div>
-                  </a>
-              </div>
-          </div>
-      </section> --> 
-
          <section id="contact-section">
         <h1 class="section-heading">Kontakt</h1>
         <p> Find me on</p>
@@ -171,6 +119,5 @@ var result = tablica.lastIndexOf("Jakaś zmienna",#);<br>// wynikiem jest ostatn
         <a href="mailto:freju13@gmail.com"><i class="fas fa-envelope-square fa-3x"></i> E-mail</a>
     </section>
     </main>
-
 </body>
 </html>
