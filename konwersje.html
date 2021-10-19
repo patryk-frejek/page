@@ -14,27 +14,28 @@
 
 
 </style>
-    <title>Notatki JavaScript</title>
+    <title>Notatki CSS</title>
     
 </head>
 <body>
     <main>
+        <div it="top"></div>
         <nav id="navbar">
-           <ul>
-               <li><a href="#home">Strona Główna</a></li>
-               <li><a href="https://freju94.github.io/notatki/portfolio.html">Portfolio</a></li>
-               <li><a href="#">HTML</a></li>
-               <li><a href="#">CSS</a></li>
-               <li><a href="">JavaScript</a></li>
-               <li><a href="#">Kontakt </a></li>
-           </ul> 
+            <ul>
+                <li><a href="#top">Strona Główna</a></li>
+                <li><a href="https://freju94.github.io/notatki/portfolio.html">Portfolio</a></li>
+                <li><a href="https://freju94.github.io/notatki/html.html">HTML</a></li>
+                <li><a href="https://freju94.github.io/notatki/css.html">CSS</a></li>
+                <li><a href="https://freju94.github.io/notatki/javascript.html">JavaScript</a></li>
+                <li><a href="#contact-section">Kontakt </a></li>
+            </ul> 
         </nav>
         <div id="link-box">
         <div class="notes" id="notes-list">
             <ul>
-                <li id="tablice"><a href="https://freju94.github.io/notatki/tablice.html">Tablice</a></li>
-                <li id="konwersje"><a href="https://freju94.github.io/notatki/konwersje.html">Konwersje jawne i niejawne</a></li>
-                <li id="zmienne"><a href="https://freju94.github.io/notatki/variables.html">Typy zmiennych</a></li>
+                <li id="#"><a href="#">Rezerwa</a></li>
+                <li id="#"><a href="#">Rezerwa</a></li>
+                <li id="#"><a href="#">Rezerwa</a></li>
             </ul>
         </div>
         <div class="notes" id="notes-list2">
@@ -55,47 +56,48 @@
 <!-- SEKCJA Z NOTATKAMI -->
         <div id="notatki">
             <br>
-                <br>
-    <p>
-KONWERSJE JAWNE ORAZ NIE JAWNE=  jawne gdy sami decydujemy o konwersji w sposób bezpośredni. <br>
-<br><br>
-============W warunkowych porównanie liczby i stringa - liczba konwertuje się na string.<br>
-<br>
-============String na boolean == string który nie jest pusty jest prawdą<br>
-<br>
-============!!x - podwójna negacja <br>
-dla falszów  robi fałsz<br>
-dla true podwójna negacja  to true. Pojedyncz false<br>
-<br>
-============Konwersje Boolean(); JAWNE<br>
-Boolean("true"); - w przypaadku jakichkolwiek stringów robi true<br>
-Boolean(""); - pusty string, null,undefined oraz 0  daje false.<br>
-<br>
-============Konwersja tablicy na string<br>
-const arr = [1,2,3,4].join(""); // wynik "1,2,3,4" lub<br>
-arr.toString(); // 1,2,3,4,<br>
-<br>
-============ Konwersja liczb - Math.floor(x);<br>
-zwraca największą liczbę całkowitą równą lub mniejszą podanej liczbie<br>
-Math.floor(4.8);//4<br>
-Math.floor(-4.8);// 5<br>
-<br>
-============ Konwersja liczb - Math.ceil(x);<br>
-zwraca największą liczbę całkowitą równą lub większą podanej liczbie<br>
-<br>
-Math.ceil(0.1); 1<br>
-Math.ceil(1.1);2<br>
-Math.ceil(-1.1);-1<br>
-<br>
-============ Konwersja liczb - Math.round(x);<br>
-zwraca najbliższą liczbę całkowitą<br>
-Math.round(3.5); //4<br>
-<br>
-============ Konwersja liczb - Math.trunc(x);<br>
-ucina część po przecinku<br>
-Math.trunc(3.5); //<br>
-
-</p>
+                <p>
+                  
+    KONWERSJE JAWNE ORAZ NIE JAWNE=  jawne gdy sami decydujemy o konwersji w sposób bezpośredni. <br>
+    <br><br>
+    ============W warunkowych porównanie liczby i stringa - liczba konwertuje się na string.<br>
+    <br>
+    ============String na boolean == string który nie jest pusty jest prawdą<br>
+    <br>
+    ============!!x - podwójna negacja <br>
+    dla falszów  robi fałsz<br>
+    dla true podwójna negacja  to true. Pojedyncz false<br>
+    <br>
+    ============Konwersje Boolean(); JAWNE<br>
+    Boolean("true"); - w przypaadku jakichkolwiek stringów robi true<br>
+    Boolean(""); - pusty string, null,undefined oraz 0  daje false.<br>
+    <br>
+    ============Konwersja tablicy na string<br>
+    const arr = [1,2,3,4].join(""); // wynik "1,2,3,4" lub<br>
+    arr.toString(); // 1,2,3,4,<br>
+    <br>
+    ============ Konwersja liczb - Math.floor(x);<br>
+    zwraca największą liczbę całkowitą równą lub mniejszą podanej liczbie<br>
+    Math.floor(4.8);//4<br>
+    Math.floor(-4.8);// 5<br>
+    <br>
+    ============ Konwersja liczb - Math.ceil(x);<br>
+    zwraca największą liczbę całkowitą równą lub większą podanej liczbie<br>
+    <br>
+    Math.ceil(0.1); 1<br>
+    Math.ceil(1.1);2<br>
+    Math.ceil(-1.1);-1<br>
+    <br>
+    ============ Konwersja liczb - Math.round(x);<br>
+    zwraca najbliższą liczbę całkowitą<br>
+    Math.round(3.5); //4<br>
+    <br>
+    ============ Konwersja liczb - Math.trunc(x);<br>
+    ucina część po przecinku<br>
+    Math.trunc(3.5); //<br>
+    
+    
+                </p>
         </div>
        
          <section id="contact-section">
