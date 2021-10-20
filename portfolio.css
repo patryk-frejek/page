@@ -23,14 +23,15 @@ body{
 
 #navbar ul{
     display: flex;
-    margin: 0px 10px 10px 10px;
+    flex-wrap: wrap;
+    margin: 0px 0px 10px auto;
     width: 100%;
     justify-content: space-evenly;
     list-style: none;
 }
 nav ul li a{
      margin-left: 3px;
-     color: white;
+     color: black;
      opacity: 0.8;
      font-size: 1.2rem;
     text-decoration: none;
@@ -146,7 +147,7 @@ justify-content: center;
     margin-bottom: 10px;
     width: 30%;
     height: auto;
-    font-size: 0,7rem;
+    font-size: 10px;
 
 }
 .notes ul li{
@@ -178,6 +179,8 @@ text-decoration: underline;
     text-decoration: none;
     font-size: 1.5rem;
 }
+
 #notatki{
-margin: 10px;
+    margin-left:10px ;
+    margin-right: 10px;
 }
