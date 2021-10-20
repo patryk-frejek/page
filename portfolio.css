@@ -23,7 +23,7 @@ body{
 
 #navbar ul{
     display: flex;
-    margin: 0px 0px 10px auto;
+    margin: 0px 10px 10px 10px;
     width: 100%;
     justify-content: space-evenly;
     list-style: none;
