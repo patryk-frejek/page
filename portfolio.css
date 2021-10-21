@@ -49,6 +49,9 @@ opacity: 1;
 text-decoration: underline;
 transition: all 0.5s;
 }
+.notes ul{
+padding-left: 10px;
+}
 
 section#intro{
     height: 50px;
