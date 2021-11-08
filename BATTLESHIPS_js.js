@@ -74,7 +74,7 @@ var controller = {
 };
 ////////////////////////MODEL///MODEL//MODEL//MODEL///////////////////////////////////////////////////////
 var model = {
-	boardSize: 5,
+	boardSize: 10,
 	numShips: 3,
 	shipLength: 3,
 	shipsSunk: 0,
