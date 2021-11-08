@@ -1,0 +1,12 @@
+body{
+  background-color: black;
+}
+
+#board{
+  box-sizing: border-box;
+  position: relative;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background:url(./vectora150200035.jpg) no-repeat;
+}
