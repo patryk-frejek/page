@@ -34,6 +34,23 @@ function init() {
 	var guessInput = document.getElementById("guessInput");
 	guessInput.onkeypress = handleKeyPress;
 	model.generateShipsLocations();
+	var guessCell = document.getElementsByTagName("td");
+	for (var i = 0; i < guessCell.length; i++) {
+		guessCell[i].onclick = handleClickCell;
+	}
+}
+
+function handleClickCell(eventObj) {
+	var cell = eventObj.target;
+	var guessInput = document.getElementById("guessInput");
+	guessInput.value = cell.id + "";
+	var guess = guessInput.value;
+	console.log(guess);
+	if (guess[0] > model.boardSize - 1 || guess[1] > model.boardSize - 1) {
+		alert("Ups.Pole poza mapą");
+	} else {
+		model.fire(guess);
+	}
 }
 
 function handleKeyPress(e) {
@@ -47,6 +64,7 @@ function handleKeyPress(e) {
 function handleFireButton() {
 	var guessInput = document.getElementById("guessInput");
 	var guess = guessInput.value;
+	console.log("guess = " + guess);
 	controller.processGuess(guess);
 	guessInput.value = "";
 }
@@ -56,7 +74,9 @@ window.onload = init;
 var controller = {
 	guesses: 0,
 	processGuess: function (guess) {
-		var location = parseGuess(guess);
+		if (typeof guess) {
+			var location = parseGuess(guess);
+		}
 		if (location) {
 			this.guesses = this.guesses + 1;
 			var hit = model.fire(location);
@@ -74,7 +94,7 @@ var controller = {
 };
 ////////////////////////MODEL///MODEL//MODEL//MODEL///////////////////////////////////////////////////////
 var model = {
-	boardSize: 7,
+	boardSize: 5,
 	numShips: 3,
 	shipLength: 3,
 	shipsSunk: 0,
@@ -115,16 +135,30 @@ var model = {
 				ship.hits[index] = "hit";
 				view.displayMessage("Trafiony");
 				view.hit(guess);
+				controller.guesses = controller.guesses + 1;
+				console.log(controller.guesses);
 				if (this.isSunk(ship)) {
 					this.shipsSunk++;
 					view.displayMessage("Trafiony i zatopiony");
+					if (this.shipsSunk === this.numShips) {
+						view.displayMessage(
+							"Brawo. Zatopiłeś " +
+								model.numShips +
+								" statki w " +
+								controller.guesses +
+								"próbach"
+						);
+					}
 				}
 				return true;
 			} else {
+				console.log(controller.guesses);
 				view.miss(guess);
 				view.displayMessage("Pudło");
 			}
 		}
+		controller.guesses = controller.guesses + 1;
+
 		return false;
 	},
 	generateShipsLocations: function () {
