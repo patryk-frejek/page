@@ -9,31 +9,34 @@
     <script src="BATTLESHIPS_js.js"></script>
   <style>
       body{
-  background-color: black;
-  color: white;
+background: #000000;
+background: -webkit-radial-gradient(center, #000000, #18421A);
+background: -moz-radial-gradient(center, #000000, #18421A);
+background: radial-gradient(ellipse at center, #000000, #18421A);  color: white;
 }
 
 label{
-  font-size: 1.5rem;}
+  font-size: 1rem;}
 
 input{
-width: 75px;
-height: 25px;
+width: 30px;
+height: 20px;
 margin: 10px;
 }
 form{
-  padding: 20px;
+  padding: 3px;
   position: fixed;
   right: 50px;
   background-color: green;
-  border-radius: 10px;
-  width: 375px;
-  bottom: 5vh;
+  border-radius: 3px;
+  width: auto;
+  bottom: 5px;
 }
 
 button{
-  font-size: 1.5rem;
-margin: 10px;}
+  font-size: 1rem;
+}
+
 
 div#board { 
   background-image: url("./vectora150200035.jpg");
@@ -45,16 +48,17 @@ div#board {
 margin-left: auto;
 margin-right: auto;
 }
+
 h1{display: block;
-width: 450px;
+width: 200px;
   font-family: 'Times New Roman', Times, serif;
   color: white;
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.8rem;
   margin: 30px auto 30px auto;
-  border: solid green 5px;
+  border: solid green 2px;
   border-radius: 10px;
-  padding: 15px;
+  padding: 5px;
   
 }
 table{
@@ -70,9 +74,9 @@ div#message{
   position: absolute;
   top:10px;
   left:10px;
-  width: 20%;
-  min-height: 100px;
-  height: 100px;
+  width:16%;
+  min-height: 70px;
+  height: 70px;
   border: green dashed 2px;
   overflow: hidden;
   padding: 10px;
@@ -222,7 +226,7 @@ height: auto;
     </div>
 
   <form id="celownik">
-      <label for="guessInput">Cel  i pal! Wybierz pole do strzału</label><br>
+      <label for="guessInput">Cel  i pal! Wybierz pole do strzału</label>
       <input id="guessInput" type="text" maxlength="2">
       <button type="button" id="fireButton">OGNIA!!!</button>
   </form>
