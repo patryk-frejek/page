@@ -20,10 +20,11 @@ function parseGuess(guess) {
 		alert("Ups.Pole poza mapą");
 	} else if (document.getElementById(guessOut).className !== "") {
 		view.displayMessage("Strzelałeś już w to miejsce");
+	} else if (model.gameOver == true) {
+		view.displayMessage("Gra skończona :)");
 	} else {
 		this.guesses = this.guesses + 1;
 		return alphabet.indexOf(guess[0]) + guess[1];
-		var hit = model.fire;
 	}
 	return null;
 }
@@ -44,10 +45,16 @@ function handleClickCell(eventObj) {
 	var cell = eventObj.target;
 	var guessInput = document.getElementById("guessInput");
 	guessInput.value = cell.id + "";
+	var guessClass = document.getElementById(cell.id);
+	guessClass = guessClass.className + "";
 	var guess = guessInput.value;
 	console.log(guess);
 	if (guess[0] > model.boardSize - 1 || guess[1] > model.boardSize - 1) {
 		alert("Ups.Pole poza mapą");
+	} else if (guessClass !== "") {
+		alert("Strzelałeś już w to miejsce!");
+	} else if (model.gameOver == true) {
+		alert("gameover");
 	} else {
 		model.fire(guess);
 	}
@@ -81,6 +88,8 @@ var controller = {
 			this.guesses = this.guesses + 1;
 			var hit = model.fire(location);
 			if (hit && model.shipsSunk === model.numShips) {
+				console.log("gameover");
+				model.gameOver = true;
 				view.displayMessage(
 					"Brawo. Zatopiłeś " +
 						model.numShips +
@@ -94,10 +103,11 @@ var controller = {
 };
 ////////////////////////MODEL///MODEL//MODEL//MODEL///////////////////////////////////////////////////////
 var model = {
-	boardSize: 10,
-	numShips: 6,
+	boardSize: 5,
+	numShips: 3,
 	shipLength: 3,
 	shipsSunk: 0,
+	gameOver: false,
 	ships: [
 		{
 			locations: ["", "", ""],
@@ -153,6 +163,8 @@ var model = {
 					this.shipsSunk++;
 					view.displayMessage("Trafiony i zatopiony");
 					if (this.shipsSunk === this.numShips) {
+						console.log("gameover");
+						model.gameOver = true;
 						view.displayMessage(
 							"Brawo. Zatopiłeś " +
 								model.numShips +
